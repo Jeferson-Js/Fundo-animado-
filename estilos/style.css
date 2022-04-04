@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.text {
+    font-weight: 700;
+    font-size: 3rem;
+    border: 2px solid white;
+    border-radius: 5rem;
+    padding: 1rem 4rem;
+    color: white;
+}
+
+.gradient {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(45deg, #002e34, #004443, #00755c, #00c16c, #90ff17);
+    background-position: center;
+    background-size: 300% 300%;
+    height: 100vh;
+    width: 100vw;
+    animation: colors 15s ease infinite;
+}
+
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
